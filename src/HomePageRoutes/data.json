@@ -1,0 +1,132 @@
+{
+  "typeList": [
+    {
+      "type": "INTJ",
+      "src": "",
+      "features": "intj-features",
+      "strengthsWeaknesses": "intj-strengthsWeaknesses",
+      "suitableCareer": "intj-suitableCareer",
+      "recommendedList": "intj-recommendedList"
+    },
+    {
+      "type": "INTP",
+      "src": "",
+      "features": "intp-features",
+      "strengthsWeaknesses": "intp-strengthsWeaknesses",
+      "suitableCareer": "intp-suitableCareer",
+      "recommendedList": "intp-recommendedList"
+    },
+    {
+      "type": "ENTJ",
+      "src": "",
+      "features": "entj-features",
+      "strengthsWeaknesses": "entj-strengthsWeaknesses",
+      "suitableCareer": "entj-suitableCareer",
+      "recommendedList": "entj-recommendedList"
+    },
+    {
+      "type": "ENTP",
+      "src": "",
+      "features": "entp-features",
+      "strengthsWeaknesses": "entp-strengthsWeaknesses",
+      "suitableCareer": "entp-suitableCareer",
+      "recommendedList": "entp-recommendedList"
+    },
+    {
+      "type": "ISTJ",
+      "src": "",
+      "features": "istj-features",
+      "strengthsWeaknesses": "istj-strengthsWeaknesses",
+      "suitableCareer": "istj-suitableCareer",
+      "recommendedList": "istj-recommendedList"
+    },
+    {
+      "type": "ISFJ",
+      "src": "",
+      "features": "isfj-features",
+      "strengthsWeaknesses": "isfj-strengthsWeaknesses",
+      "suitableCareer": "isfj-suitableCareer",
+      "recommendedList": "isfj-recommendedList"
+    },
+    {
+      "type": "ESTJ",
+      "src": "",
+      "features": "estj-features",
+      "strengthsWeaknesses": "estj-strengthsWeaknesses",
+      "suitableCareer": "estj-suitableCareer",
+      "recommendedList": "estj-recommendedList"
+    },
+    {
+      "type": "ESFJ",
+      "src": "",
+      "features": "esfj-features",
+      "strengthsWeaknesses": "esfj-strengthsWeaknesses",
+      "suitableCareer": "esfj-suitableCareer",
+      "recommendedList": "esfj-recommendedList"
+    },
+    {
+      "type": "INFJ",
+      "src": "",
+      "features": "infj-features",
+      "strengthsWeaknesses": "infj-strengthsWeaknesses",
+      "suitableCareer": "infj-suitableCareer",
+      "recommendedList": "infj-recommendedList"
+    },
+    {
+      "type": "INFP",
+      "src": "",
+      "features": "infp-features",
+      "strengthsWeaknesses": "infp-strengthsWeaknesses",
+      "suitableCareer": "infp-suitableCareer",
+      "recommendedList": "infp-recommendedList"
+    },
+    {
+      "type": "ENFJ",
+      "src": "",
+      "features": "enfj-features",
+      "strengthsWeaknesses": "enfj-strengthsWeaknesses",
+      "suitableCareer": "enfj-suitableCareer",
+      "recommendedList": "enfj-recommendedList"
+    },
+    {
+      "type": "ENFP",
+      "src": "",
+      "features": "enfp-features",
+      "strengthsWeaknesses": "enfp-strengthsWeaknesses",
+      "suitableCareer": "enfp-suitableCareer",
+      "recommendedList": "enfp-recommendedList"
+    },
+    {
+      "type": "ISTP",
+      "src": "",
+      "features": "istp-features",
+      "strengthsWeaknesses": "istp-strengthsWeaknesses",
+      "suitableCareer": "istp-suitableCareer",
+      "recommendedList": "istp-recommendedList"
+    },
+    {
+      "type": "ISFP",
+      "src": "",
+      "features": "isfp-features",
+      "strengthsWeaknesses": "isfp-strengthsWeaknesses",
+      "suitableCareer": "isfp-suitableCareer",
+      "recommendedList": "isfp-recommendedList"
+    },
+    {
+      "type": "ESTP",
+      "src": "",
+      "features": "estp-features",
+      "strengthsWeaknesses": "estp-strengthsWeaknesses",
+      "suitableCareer": "estp-suitableCareer",
+      "recommendedList": "estp-recommendedList"
+    },
+    {
+      "type": "ESFP",
+      "src": "",
+      "features": "esfp-features",
+      "strengthsWeaknesses": "esfp-strengthsWeaknesses",
+      "suitableCareer": "esfp-suitableCareer",
+      "recommendedList": "esfp-recommendedList"
+    }
+  ]
+}
