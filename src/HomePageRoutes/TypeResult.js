@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import data from "./data.json";
 import { useParams } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import TypeResultContent from "./TypeResultContent";
 
 export default function TypeResult(props) {

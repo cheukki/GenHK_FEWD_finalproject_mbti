@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import TestResult from "./TestResult";
+import MbtiResult from "./Result/MbitResult";
 import TypeResultContent from "./TypeResultContent";
-// import { type } from "@testing-library/user-event/dist/type";
+import { showResults } from "./Result/CheckType";
 import data from "./data.json";
+// import { type } from "@testing-library/user-event/dist/type";
 
 export default function YourResult() {
-  // const testedtype = <TestResult {...type} />;
-  // const testedtypeobj = data.typeList.find(
-  //   ({ type }) => type === testedtypeobj
-  // );
+  const testedtypeobj = data.typeList.find(
+    ({ type }) => type === showResults()
+  );
   return (
     <div className="YourResult">
       <h1>16 Personality Types</h1>
@@ -26,11 +26,11 @@ export default function YourResult() {
         </ul>
       </nav>
       <div style={{ display: "flex", gap: "10px", width: "100%" }}>
-        <div style={{ width: "30%", gap: "10px" }}>
-          <TestResult />
+        <div style={{ width: "50%", gap: "10px" }}>
+          <MbtiResult />
         </div>
-        <div style={{ width: "70%", gap: "10px" }}>
-          {/* <TypeResultContent showingtype={testedtypeobj} /> */}
+        <div style={{ width: "50%", gap: "10px" }}>
+          <TypeResultContent showingtype={testedtypeobj} />
         </div>
       </div>
     </div>
