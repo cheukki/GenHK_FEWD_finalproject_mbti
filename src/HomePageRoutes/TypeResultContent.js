@@ -16,28 +16,28 @@ export default function TypeResultContent({ showingtype }) {
       </Tabs>
       {/* TAB 1 Contents */}
       {currentTabIndex === 0 && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
           <Typography variant="p">{showingtype.features}</Typography>
         </Box>
       )}
       {/* TAB 2 Contents */}
       {currentTabIndex === 1 && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
           <Typography variant="p">{showingtype.strengthsWeaknesses}</Typography>
         </Box>
       )}
       {/* TAB 3 Contents */}
       {currentTabIndex === 2 && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
           <Typography variant="p">{showingtype.suitableCareer}</Typography>
         </Box>
       )}
       {/* TAB 4 Contents */}
       {currentTabIndex === 3 && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
           <Typography variant="p">{showingtype.recommendedList}</Typography>
         </Box>

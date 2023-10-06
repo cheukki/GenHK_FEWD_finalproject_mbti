@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
 import MbtiResult from "./Result/MbitResult";
 import TypeResultContent from "./TypeResultContent";
 import { showResults } from "./Result/CheckType";
 import data from "./data.json";
+import "./YourResult.css";
 // import { type } from "@testing-library/user-event/dist/type";
 
 export default function YourResult() {
@@ -10,27 +13,33 @@ export default function YourResult() {
     ({ type }) => type === showResults()
   );
   return (
-    <div className="YourResult">
+    <div>
       <h1>16 Personality Types</h1>
-      <nav>
-        <ul style={{ listStyle: "none", display: "flex", gap: "10px" }}>
-          <li>
-            <Link to={`/`}>Start Test</Link>
-          </li>
-          <li>
-            <Link to={`/YourResult`}>Your Result</Link>
-          </li>
-          <li>
-            <Link to={`/PersonalityTypes`}>Personality Types</Link>
-          </li>
-        </ul>
-      </nav>
-      <div style={{ display: "flex", gap: "10px", width: "100%" }}>
-        <div style={{ width: "50%", gap: "10px" }}>
-          <MbtiResult />
+      <div className="YourResult">
+        <div >
+          <ButtonGroup
+            variant="string"
+            size="small"
+            aria-label="small button group"
+          >
+            <Link to={`/`}>
+              <Button>Home</Button>
+            </Link>
+            <Link to={`/YourResult`}>
+              <Button>Your Result</Button>
+            </Link>
+            <Link to={`/PersonalityTypes`}>
+              <Button>Personality Types</Button>
+            </Link>
+          </ButtonGroup>
         </div>
-        <div style={{ width: "50%", gap: "10px" }}>
-          <TypeResultContent showingtype={testedtypeobj} />
+        <div className="result">
+          <div className="left" style={{ padding: 0 }}>
+            <MbtiResult />
+          </div>
+          <div className="right">
+            <TypeResultContent showingtype={testedtypeobj} />
+          </div>
         </div>
       </div>
     </div>

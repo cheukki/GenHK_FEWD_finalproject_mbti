@@ -2,26 +2,23 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import "@fontsource/roboto/400.css";
 import "./MbtiResult.css";
 import scoredata from "./scoredata.json";
-import { showResults } from "./CheckType";
-// import ESFJ from "./image/ESFJ.png";
-// import ESFP from "./image/ESFP.png";
-// import ESTJ from "./image/ESTJ.png";
-// import ESTP from "./image/ESTP.png";
-// import ENFJ from "./image/ENFJ.png";
-// import ENFP from "./image/ENFP.png";
-// import ENTJ from "./image/ENTJ.png";
-// import ENTP from "./image/ENTP.png";
-// import INFJ from "./image/INFJ.png";
-// import INFP from "./image/INFP.png";
-// import INTJ from "./image/INTJ.png";
-// import INTP from "./image/INTP.png";
-// import ISFJ from "./image/ISFJ.png";
-// import ISFP from "./image/ISFP.png";
-// import ISTJ from "./image/ISTJ.png";
-// import ISTP from "./image/ISTP.png";
+import ESFJ from "./image/ESFJ.png";
+import ESFP from "./image/ESFP.png";
+import ESTJ from "./image/ESTJ.png";
+import ESTP from "./image/ESTP.png";
+import ENFJ from "./image/ENFJ.png";
+import ENFP from "./image/ENFP.png";
+import ENTJ from "./image/ENTJ.png";
+import ENTP from "./image/ENTP.png";
+import INFJ from "./image/INFJ.png";
+import INFP from "./image/INFP.png";
+import INTJ from "./image/INTJ.png";
+import INTP from "./image/INTP.png";
+import ISFJ from "./image/ISFJ.png";
+import ISFP from "./image/ISFP.png";
+import ISTJ from "./image/ISTJ.png";
+import ISTP from "./image/ISTP.png";
 import "bootstrap/dist/css/bootstrap.css";
-// import Button from "@mui/material/Button";
-// import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -32,54 +29,54 @@ import Grid from "@mui/material/Grid";
 
 // let score = { e: 6, i: 5, s: 8, n: 6, t: 6, f: 8, j: 5, p: 6 };
 
-// let type = "";
+ let type = "";
 
-// function getpic() {
-//   if (type === "ESFJ") {
-//     return ENFJ;
-//   } else if (type === "ENFP") {
-//     return ENFP;
-//   } else if (type === "ENTJ") {
-//     return ENTJ;
-//   } else if (type === "ENTP") {
-//     return ENTP;
-//   } else if (type === "ESFJ") {
-//     return ESFJ;
-//   } else if (type === "ESFP") {
-//     return ESFP;
-//   } else if (type === "ESTJ") {
-//     return ESTJ;
-//   } else if (type === "ESTP") {
-//     return ESTP;
-//   } else if (type === "INFJ") {
-//     return INFJ;
-//   } else if (type === "INFP") {
-//     return INFP;
-//   } else if (type === "INTJ") {
-//     return INTJ;
-//   } else if (type === "INTP") {
-//     return INTP;
-//   } else if (type === "ISFJ") {
-//     return ISFJ;
-//   } else if (type === "ISFP") {
-//     return ISFP;
-//   } else if (type === "ISTJ") {
-//     return ISTJ;
-//   } else if (type === "ISTP") {
-//     return ISTP;
-//   }
-// }
+ function getpic() {
+   if (type === "ESFJ") {
+     return ENFJ;
+   } else if (type === "ENFP") {
+     return ENFP;
+   } else if (type === "ENTJ") {
+     return ENTJ;
+   } else if (type === "ENTP") {
+     return ENTP;
+   } else if (type === "ESFJ") {
+     return ESFJ;
+   } else if (type === "ESFP") {
+     return ESFP;
+   } else if (type === "ESTJ") {
+     return ESTJ;
+   } else if (type === "ESTP") {
+     return ESTP;
+   } else if (type === "INFJ") {
+     return INFJ;
+   } else if (type === "INFP") {
+     return INFP;
+   } else if (type === "INTJ") {
+     return INTJ;
+   } else if (type === "INTP") {
+     return INTP;
+   } else if (type === "ISFJ") {
+     return ISFJ;
+   } else if (type === "ISFP") {
+     return ISFP;
+   } else if (type === "ISTJ") {
+     return ISTJ;
+   } else if (type === "ISTP") {
+     return ISTP;
+   }
+ }
 
-// function showResults() {
-//   if (type.length > 3) {
-//     return;
-//   }
-//   type += scoredata.score.e >= scoredata.score.i ? "E" : "I";
-//   type += scoredata.score.s >= scoredata.score.n ? "S" : "N";
-//   type += scoredata.score.t >= scoredata.score.f ? "T" : "F";
-//   type += scoredata.score.j >= scoredata.score.p ? "J" : "P";
-//   console.log(type);
-// }
+ function showResults() {
+   if (type.length > 3) {
+     return;
+   }
+   type += scoredata.score.e >= scoredata.score.i ? "E" : "I";
+   type += scoredata.score.s >= scoredata.score.n ? "S" : "N";
+   type += scoredata.score.t >= scoredata.score.f ? "T" : "F";
+   type += scoredata.score.j >= scoredata.score.p ? "J" : "P";
+   console.log(type);
+ }
 
 function calce() {
   return Math.round((scoredata.score.e / 11) * 100);
@@ -133,7 +130,7 @@ const theme = createTheme({
 });
 
 export default function TestResult() {
-  // showResults();
+  showResults();
   return (
     <div className="MbtiResult">
       <Box sx={{ flexGrow: 1 }}>
@@ -141,22 +138,22 @@ export default function TestResult() {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Item
-                sx={{ backgroundColor: "#76ff03", border: "1px solid grey" }}
+                sx={{ backgroundColor: "#E5D283", border: "1px solid grey" }}
               >
                 <p className="title">Your result is:</p>
               </Item>
             </Grid>
             <Grid item xs={6}>
               <Item
-                sx={{ backgroundColor: "#76ff03", border: "1px solid grey" }}
+                sx={{ backgroundColor: "#E5D283", border: "1px solid grey" }}
               >
-                {/* <img src={getpic()} alt="ENFJ" /> */}
-                <p>{showResults()}</p>
+                <img src={getpic()} alt="ENFJ" />
+                <p>{type}</p>
               </Item>
             </Grid>
             <Grid item xs={6}>
               <Item
-                sx={{ backgroundColor: "#76ff03", border: "1px solid grey" }}
+                sx={{ backgroundColor: "#E5D283", border: "1px solid grey" }}
               >
                 <ProgressBar className="top">
                   <ProgressBar
@@ -227,13 +224,6 @@ export default function TestResult() {
             <Grid item xs={12}>
               <Stack direction="row" spacing={2}>
                 <ThemeProvider theme={theme}>
-                  {/* <Button
-                        variant="contained"
-                        size="large"
-                        endIcon={<SendIcon />}
-                    >
-                        Show More
-                    </Button> */}
                 </ThemeProvider>
               </Stack>
             </Grid>

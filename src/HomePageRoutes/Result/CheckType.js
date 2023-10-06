@@ -1,5 +1,7 @@
 import scoredata from "./scoredata.json";
+
 let type = "";
+
 export function showResults() {
   if (type.length > 3) {
     return type;
