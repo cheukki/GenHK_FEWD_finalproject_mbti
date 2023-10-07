@@ -1,0 +1,19 @@
+.MuiTabs-flexContainer .MuiButtonBase-root{
+    padding: 0;
+    margin: 5px !important;
+}
+
+
+.YourResult{
+    margin: 0;
+}
+
+.MuiBox-root{
+   padding: 0 !important;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

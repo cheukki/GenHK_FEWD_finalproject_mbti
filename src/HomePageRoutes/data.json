@@ -1,0 +1,375 @@
+{
+  "typeList": [
+    {
+      "type": "INTJ",
+      "personality": "Architect",
+      "src": "",
+      "features": "intj-features",
+      "strengths": [
+        "Rational",
+        "Informed",
+        "Independent",
+        "Determined",
+        "Curious",
+        "Original"
+      ],
+      "weaknesses": [
+        "Arrogant",
+        "Dismissive of Emotions",
+        "Overly Critical",
+        "Combative",
+        "Socially Clueless"
+      ],
+      "suitableCareer": "intj-suitableCareer",
+      "recommendedList": "intj-recommendedList"
+    },
+    {
+      "type": "INTP",
+      "personality": "Logician",
+      "src": "",
+      "features": "intp-features",
+      "strengths": [
+        "Analytical",
+        "Original",
+        "Open-Minded",
+        "Curious",
+        "Objective"
+      ],
+      "weaknesses": [
+        "Disconnected",
+        "Insensitive",
+        "Dissatisfied",
+        "Impatient",
+        "Perfectionistic"
+      ],
+      "suitableCareer": "intp-suitableCareer",
+      "recommendedList": "intp-recommendedList"
+    },
+    {
+      "type": "ENTJ",
+      "personality": "Commander",
+      "src": "",
+      "features": "entj-features",
+      "strengths": [
+        "Efficient",
+        "Energetic",
+        "Self-Confident",
+        "Strong-Willed",
+        "Strategic Thinkers",
+        "Charismatic and Inspiring"
+      ],
+      "weaknesses": [
+        "Stubborn and Dominant",
+        "Intolerant",
+        "Impatient",
+        "Arrogant",
+        "Poor Handling of Emotions",
+        "Cold and Ruthless"
+      ],
+      "suitableCareer": "entj-suitableCareer",
+      "recommendedList": "entj-recommendedList"
+    },
+    {
+      "type": "ENTP",
+      "personality": "Debater",
+      "src": "",
+      "features": "entp-features",
+      "strengths": [
+        "Knowledgeable",
+        "Quick Thinkers",
+        "Original",
+        "Excellent Brainstormers",
+        "Charismatic",
+        "Energetic"
+      ],
+      "weaknesses": [
+        "Very Argumentative",
+        "Insensitive",
+        "Intolerant",
+        "Can Find It Difficult to Focus",
+        "Dislike Practical Matters"
+      ],
+      "suitableCareer": "entp-suitableCareer",
+      "recommendedList": "entp-recommendedList"
+    },
+    {
+      "type": "ISTJ",
+      "personality": "Logistician",
+      "src": "",
+      "strengths": [
+        "Logistician",
+        "Strong-willed and Dutifu",
+        "Very Responsible",
+        "Calm and Practical",
+        "Create and Enforce Order",
+        "Jacks-of-all-trades"
+      ],
+      "weaknesses": [
+        "Stubborn",
+        "Insensitive ",
+        "Always by the Book",
+        "Judgmental",
+        "Often Unreasonably Blame Themselves"
+      ],
+      "suitableCareer": "istj-suitableCareer",
+      "recommendedList": "istj-recommendedList"
+    },
+    {
+      "type": "ISFJ",
+      "personality": "Defender",
+      "src": "",
+      "features": "isfj-features",
+      "strengths": [
+        "Supportive",
+        "Reliable",
+        "Observant",
+        "Enthusiastic",
+        "Hardworking",
+        "Good Practical Skills"
+      ],
+      "weaknesses": [
+        "Overly Humble",
+        "Taking Things Personally",
+        "Repressing Their Feelings",
+        "Overcommitted",
+        "Reluctant to Change",
+        "Too Altruistic"
+      ],
+      "suitableCareer": "isfj-suitableCareer",
+      "recommendedList": "isfj-recommendedList"
+    },
+    {
+      "type": "ESTJ",
+      "personality": "Executive",
+      "src": "",
+      "features": "estj-features",
+      "strengths": [
+        "Dedicated",
+        "Strong-willed",
+        "Direct and Honest",
+        "Loyal, Patient and Reliable",
+        "Enjoy Creating Order",
+        "Excellent Organizers"
+      ],
+      "weaknesses": [
+        "Inflexible and Stubborn",
+        "Uncomfortable with Unconventional Situations",
+        "Judgmental",
+        "Too Focused on Social Status",
+        "Difficult to Relax",
+        "Difficulty Expressing Emotion"
+      ],
+      "suitableCareer": "estj-suitableCareer",
+      "recommendedList": "estj-recommendedList"
+    },
+    {
+      "type": "ESFJ",
+      "personality": "Consul",
+      "src": "",
+      "features": "esfj-features",
+      "strengths": [
+        "Strong Practical Skills",
+        "Strong Sense of Duty",
+        "Very Loyal",
+        "Sensitive and Warm",
+        "Good at Connecting with Others"
+      ],
+      "weaknesses": [
+        "Worried about Their Social Status",
+        "Inflexible",
+        "Reluctant to Innovate or Improvise",
+        "Vulnerable to Criticism",
+        "Often Too Needy",
+        "Too Selfless"
+      ],
+      "suitableCareer": "esfj-suitableCareer",
+      "recommendedList": "esfj-recommendedList"
+    },
+    {
+      "type": "INFJ",
+      "personality": "Advocate",
+      "src": "",
+      "features": "infj-features",
+      "strengths": [
+        "Creative",
+        "Insightful",
+        "Principled",
+        "Passionate",
+        "Altruistic"
+      ],
+      "weaknesses": [
+        "Sensitive to Criticism",
+        "Reluctant to Open Up",
+        "Perfectionistic",
+        "Avoiding the Ordinary",
+        "Prone to Burnout"
+      ],
+      "suitableCareer": "infj-suitableCareer",
+      "recommendedList": "infj-recommendedList"
+    },
+    {
+      "type": "INFP",
+      "personality": "Mediator",
+      "src": "",
+      "features": "infp-features",
+      "strengths": [
+        "Empathetic",
+        "Generous",
+        "Open-Minded",
+        "Creative",
+        "Passionate",
+        "Idealistic"
+      ],
+      "weaknesses": [
+        "Unrealistic",
+        "Self-Isolating",
+        "Unfocused",
+        "Emotionally Vulnerable",
+        "Desperate to Please",
+        "Self-Critical"
+      ],
+      "suitableCareer": "infp-suitableCareer",
+      "recommendedList": "infp-recommendedList"
+    },
+    {
+      "type": "ENFJ",
+      "personality": "Protagonist",
+      "src": "",
+      "features": "enfj-features",
+      "strengths": [
+        "Receptive",
+        "Reliable",
+        "Passionate",
+        "Altruistic",
+        "Charismatic"
+      ],
+      "weaknesses": [
+        "Unrealistic",
+        "Overly Idealistic",
+        "Condescending",
+        "Intense",
+        "Overly Empathetic"
+      ],
+      "suitableCareer": "enfj-suitableCareer",
+      "recommendedList": "enfj-recommendedList"
+    },
+    {
+      "type": "ENFP",
+      "personality": "Campaigner",
+      "src": "",
+      "features": "enfp-features",
+      "strengths": [
+        "Curious",
+        "Perceptive",
+        "Enthusiastic",
+        "Excellent Communicators",
+        "Festive",
+        "Good-Natured"
+      ],
+      "weaknesses": [
+        "People-Pleasing",
+        "Unfocused",
+        "Disorganized",
+        "Overly Accommodating",
+        "Overly Optimistic",
+        "Restless"
+      ],
+      "suitableCareer": "enfp-suitableCareer",
+      "recommendedList": "enfp-recommendedList"
+    },
+    {
+      "type": "ISTP",
+      "personality": "Virtuoso",
+      "src": "",
+      "features": "istp-features",
+      "strengths": [
+        "Optimistic and Energetic",
+        "Creative and Practical",
+        "Spontaneous and Rational",
+        "Know How to Prioritize",
+        "Great in a Crisis",
+        "Relaxed"
+      ],
+      "weaknesses": [
+        "Stubborn",
+        "Insensitive",
+        "Private and Reserved",
+        "Easily Bored",
+        "Dislike Commitment",
+        "Risky Behavior"
+      ],
+      "suitableCareer": "istp-suitableCareer",
+      "recommendedList": "istp-recommendedList"
+    },
+    {
+      "type": "ISFP",
+      "personality": "Adventurer",
+      "src": "",
+      "features": "isfp-features",
+      "strengths": [
+        "Charming",
+        "Sensitive to Others",
+        "Imaginative",
+        "Passionate",
+        "Curious",
+        "Artistic"
+      ],
+      "weaknesses": [
+        "Fiercely Independent",
+        "Unpredictable",
+        "Easily Stressed",
+        "Overly Competitive",
+        "Fluctuating Self-Esteem"
+      ],
+      "suitableCareer": "isfp-suitableCareer",
+      "recommendedList": "isfp-recommendedList"
+    },
+    {
+      "type": "ESTP",
+      "personality": "Entrepreneur",
+      "src": "",
+      "features": "estp-features",
+      "strengths": [
+        "Bold",
+        "Rational and Practical",
+        "Original",
+        "Perceptive",
+        "Direct",
+        "Sociable"
+      ],
+      "weaknesses": [
+        "Insensitive",
+        "Impatient",
+        "Risk-prone",
+        "Unstructured",
+        "May Miss the Bigger Picture",
+        "Defiant"
+      ],
+      "suitableCareer": "estp-suitableCareer",
+      "recommendedList": "estp-recommendedList"
+    },
+    {
+      "type": "ESFP",
+      "personality": "Entertainer",
+      "src": "",
+      "features": "esfp-features",
+      "strengths": [
+        "Bold",
+        "Original",
+        "Aesthetics and Showmanship",
+        "Practical",
+        "Observant",
+        "Excellent People Skills"
+      ],
+      "weaknesses": [
+        "Sensitive",
+        "Conflict-Averse",
+        "Easily Bored",
+        "Poor Long-Term Planners",
+        "Unfocused"
+      ],
+      "suitableCareer": "esfp-suitableCareer",
+      "recommendedList": "esfp-recommendedList"
+    }
+  ]
+}
