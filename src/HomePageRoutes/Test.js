@@ -6,6 +6,7 @@ import { useEffect, useState, useReducer } from "react";
 import { scoreArr } from "./Test/Scorearr";
 import { questions } from "./Test/Qustionarr";
 import { scoreobj } from "./Test/Scoreobj";
+import "./Test.css"
 
 const MyButton = styled(Button)({
   background: "#4F709C",
@@ -71,28 +72,34 @@ export default function Test() {
     <div className="Test">
       <div className="qText">{questions[currentQ].qText}</div>
       <div className="option">
-        <button
+        <MyButton
+          size="large"
           onClick={() => {
             handleOption(optionType0);
             questions.length !== currentQ + 1 && nextQ();
           }}
         >
           {questions[currentQ].options[0].option}
-        </button>
-        <button
+        </MyButton>
+        <MyButton
+          size="large"
           onClick={() => {
             handleOption(optionType1);
             questions.length !== currentQ + 1 && nextQ();
           }}
         >
           {questions[currentQ].options[1].option}
-        </button>
+        </MyButton>
       </div>
       <div className="bottom">
-        {currentQ !== 0 && <button onClick={backQ}>Back</button>}
+        {currentQ !== 0 && (
+          <MyButton size="small" onClick={backQ}>
+            Back
+          </MyButton>
+        )}
         {questions.length === currentQ + 1 ? (
           <div>
-            <h1>You have done the test!</h1>
+            <h3>You have done the test!</h3>
             <Link to={`/TestResult`} onClick={resultCal}>
               <MyButton size="large" endIcon={<ArrowForwardIcon />}>
                 Submit and Check Result
@@ -100,7 +107,9 @@ export default function Test() {
             </Link>
           </div>
         ) : (
-          <button onClick={nextQ}>Next</button>
+          <MyButton size="small" onClick={nextQ}>
+            Next
+          </MyButton>
         )}
       </div>
     </div>

@@ -16,7 +16,7 @@ import ISTJ from "./image/ISTJ.png";
 import ISTP from "./image/ISTP.png";
 
 export default function GetPic(showingtype) {
-  if (showingtype === "ESFJ") {
+  if (showingtype === "ENFJ") {
     return ENFJ;
   } else if (showingtype === "ENFP") {
     return ENFP;
