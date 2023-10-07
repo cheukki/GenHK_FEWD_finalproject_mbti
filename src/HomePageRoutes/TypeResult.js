@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { ImportContacts } from "@mui/icons-material";
+import "./TypeResult.css"
 
 export default function TypeResult(props) {
   const params = useParams();

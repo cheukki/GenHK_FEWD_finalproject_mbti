@@ -11,7 +11,7 @@ import "./YourResult.css";
 export default function YourResult() {
   const testedtypeobj = data.typeList.find(({ type }) => type === CheckType());
   return (
-    <div>
+    <div className="big">
       <h1>16 Personality Types</h1>
       <div className="YourResult">
         <div>
