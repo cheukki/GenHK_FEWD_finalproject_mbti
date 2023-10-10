@@ -37,6 +37,8 @@ export default function Test() {
   const { currentQ, E, I, S, N, T, F, J, P } = state;
   const optionType0 = questions[currentQ].options[0].type;
   const optionType1 = questions[currentQ].options[1].type;
+  const type0Index = state[optionType0].indexOf(currentQ);
+  const type1Index = state[optionType1].indexOf(currentQ);
 
   const getInitScore = () => {
     const score = localStorage.setItem("scoreState");
@@ -45,9 +47,12 @@ export default function Test() {
   useEffect(() => {
     localStorage.setItem("scoreState", JSON.stringify(state));
   }, [state]);
-  const handleOption = (optionType) => {
-    dispatch({ type: optionType });
-    console.log(optionType);
+
+  const handleOption = (typeNewChecked, typePreviousChecked) => {
+    const newCheckedQindex = state[typeNewChecked].indexOf(currentQ);
+    !(newCheckedQindex > -1) && dispatch({ type: 'add' + typeNewChecked });
+    const removeQindex = state[typePreviousChecked].indexOf(currentQ);
+    removeQindex > -1 && dispatch({ type: 'removeChecked' + typePreviousChecked });
   };
 
   const nextQ = () => {
@@ -75,7 +80,7 @@ export default function Test() {
         <MyButton
           size="large"
           onClick={() => {
-            handleOption(optionType0);
+            handleOption(optionType0, optionType1);
             questions.length !== currentQ + 1 && nextQ();
           }}
         >
@@ -84,7 +89,7 @@ export default function Test() {
         <MyButton
           size="large"
           onClick={() => {
-            handleOption(optionType1);
+            handleOption(optionType1, optionType0);
             questions.length !== currentQ + 1 && nextQ();
           }}
         >
