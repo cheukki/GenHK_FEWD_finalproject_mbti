@@ -9,9 +9,23 @@ import "./YourResult.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
+import { scoreobj } from "./Test/Scoreobj" 
+/* import { scoreArr } from "./Test/Scorearr"; */
 // import { type } from "@testing-library/user-event/dist/type";
 
+// const asd = function asd() {
+//   if (scoreobj === null) {
+//     return false
+//   } else {
+//     return true;
+//   }
+// }
 export default function YourResult() {
+  console.log(scoreobj)
+  let asd = true;
+  if (scoreobj === null) {
+    asd =  false;
+  }
   const testedtypeobj = data.typeList.find(({ type }) => type === CheckType());
   return (
     <div className="big">
@@ -38,14 +52,22 @@ export default function YourResult() {
             </Link>
           </ButtonGroup>
         </div>
-        <div className="result">
-          <div className="left" style={{ padding: 0 }}>
-            <MbtiResult />
-          </div>
-          <div className="right">
-            <TypeResultContent showingtype={testedtypeobj} />
-          </div>
-        </div>
+        {/* {
+          asd ? (
+            <div className="result">
+              <div className="left" style={{ padding: 0 }}>
+                <MbtiResult />
+              </div>
+              <div className="right">
+                <TypeResultContent showingtype={testedtypeobj} />
+              </div>
+            </div>
+          ) : (
+            <Link to={`/`}>
+              <Button startIcon={<HomeOutlinedIcon />}>Do The Test Now!</Button>
+            </Link>
+          )
+        } */}
       </div>
     </div>
   );

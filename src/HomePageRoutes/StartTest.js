@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import * as React from "react";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -18,6 +19,7 @@ const MyButton = styled(Button)({
   padding: "0 30px",
 });
 
+
 export default function StartTest() {
   return (
     <div className="StartTest">
@@ -27,7 +29,9 @@ export default function StartTest() {
           <Button startIcon={<HomeOutlinedIcon />}>Home</Button>
         </Link>
         <Link to={`/YourResult`}>
-          <Button startIcon={<AssessmentOutlinedIcon />}>Your Result</Button>
+          <Button startIcon={<AssessmentOutlinedIcon />} disable>
+            Your Result
+          </Button>
         </Link>
         <Link to={`/PersonalityTypes`}>
           <Button startIcon={<ListAltOutlinedIcon />}>Personality Types</Button>

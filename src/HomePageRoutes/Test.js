@@ -10,6 +10,8 @@ import { scoreobj } from "./Test/Scoreobj";
 import "./Test.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 
+
+
 const MyButton = styled(Button)({
   background: "#637802",
   border: 0,
@@ -68,6 +70,14 @@ export default function Test() {
     localStorage.setItem("result", JSON.stringify(result));
     return scoreobj;
   };
+  function next() {
+    window.location.href = "/TestResult";
+  }
+  const gogo = () => {
+    resultCal();
+    next();
+}
+
 
   return (
     <div className="backhome">
@@ -107,7 +117,7 @@ export default function Test() {
           {questions.length === currentQ + 1 ? (
             <div>
               <h3>You have done the test!</h3>
-              <Link to={`/TestResult`} onClick={resultCal}>
+              <Link  onClick={gogo} >
                 <MyButton size="large" endIcon={<ArrowForwardIcon />}>
                   Submit and Check Result
                 </MyButton>
