@@ -11,7 +11,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { ImportContacts } from "@mui/icons-material";
-import "./TypeResult.css"
+import "./TypeResult.css";
 
 export default function TypeResult(props) {
   const params = useParams();
@@ -44,9 +44,9 @@ export default function TypeResult(props) {
         <div className="type">
           <img src={GetPic(clickedtype.type)} alt={clickedtype.type} />
         </div>
-        <div className="typeBar">typebar</div>
+        <div className="typeBar">{clickedtype.type}</div>
       </div>
-      <div className="typeResult-right">
+      <div className="typeResult-right" style={{ width: "70%", gap: "10px" }}>
         <TypeResultContent showingtype={clickedtype} />
       </div>
     </div>

@@ -7,7 +7,7 @@ import { useEffect, useState, useReducer } from "react";
 import { scoreArr } from "./Test/Scorearr";
 import { questions } from "./Test/Qustionarr";
 import { scoreobj } from "./Test/Scoreobj";
-import "./Test.css"
+import "./Test.css";
 
 const MyButton = styled(Button)({
   background: "#4F709C",
@@ -50,7 +50,6 @@ export default function Test() {
     dispatch({ type: optionType });
     console.log(optionType);
   };
-
   const nextQ = () => {
     dispatch({ type: "next" });
   };
