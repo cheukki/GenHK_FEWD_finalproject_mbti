@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { ImportContacts } from "@mui/icons-material";
+import { TwitterShareButton, TwitterIcon ,FacebookShareButton , FacebookIcon} from "react-share";
 
 function calce() {
   return Math.round((scoreobj.E / 11) * 100);
@@ -162,6 +163,22 @@ export default function TestResult() {
           </Grid>
         </div>
       </Box>
+      <h4>Share</h4>
+      <div className="share">
+        <TwitterShareButton
+          url="https://www.youtube.com/watch?v=xvFZjo5PgG0&"
+          title="let people know what type are you!"
+          className="Demo__some-network__share-button"
+        >
+          <TwitterIcon size={32} round />
+        </TwitterShareButton>
+        <FacebookShareButton
+          url="https://www.youtube.com/watch?v=xvFZjo5PgG0&"
+          className="Demo__some-network__share-button"
+        >
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
+      </div>  
     </div>
   );
 }

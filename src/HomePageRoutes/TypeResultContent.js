@@ -1,5 +1,7 @@
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import React, { useState } from "react";
+import SpotifyMusicApi from "./RecommendedList_api/spotify_music_api";
+
 export default function TypeResultContent({ showingtype }) {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
   const handleTabChange = (e, tabIndex) => {
@@ -17,16 +19,16 @@ export default function TypeResultContent({ showingtype }) {
       {currentTabIndex === 0 && (
         <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
-          <Typography variant="p">{showingtype.features}</Typography>
+          <Typography variant="h5">{showingtype.features}</Typography>
         </Box>
       )}
       {currentTabIndex === 1 && (
-        <Box sx={{ p: 0 }}>
+        <Box sx={{ p: 0 }} style={{ display: "flex", gap: "20px" }}>
           <div className="strengths">
             <Typography variant="h5" style={{ margin: "20px 0" }}>
               Strengths
             </Typography>
-            <Typography variant="p">
+            <Typography variant="h5">
               <ul>
                 {showingtype.strengths.map((strengthsArr) => (
                   <li>{strengthsArr}</li>
@@ -38,7 +40,7 @@ export default function TypeResultContent({ showingtype }) {
             <Typography variant="h5" style={{ margin: "20px" }}>
               Weaknesses
             </Typography>
-            <Typography variant="p">
+            <Typography variant="h5">
               {" "}
               <ul>
                 {showingtype.weaknesses.map((weaknessesArr) => (
@@ -52,13 +54,14 @@ export default function TypeResultContent({ showingtype }) {
       {currentTabIndex === 2 && (
         <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
-          <Typography variant="p">{showingtype.suitableCareer}</Typography>
+          <Typography variant="h5">{showingtype.suitableCareer}</Typography>
         </Box>
       )}
       {currentTabIndex === 3 && (
         <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
-          <Typography variant="p">{showingtype.recommendedList}</Typography>
+          {/* <Typography variant="p">{showingtype.recommendedList}</Typography> */}
+          <Typography variant="h5">{SpotifyMusicApi()}</Typography>
         </Box>
       )}
     </React.Fragment>

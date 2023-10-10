@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { styled } from "@material-ui/styles";
 import { useEffect, useState, useReducer } from "react";
 import { scoreArr } from "./Test/Scorearr";
 import { questions } from "./Test/Qustionarr";
 import { scoreobj } from "./Test/Scoreobj";
-import "./Test.css"
+import "./Test.css";
 
 const MyButton = styled(Button)({
   background: "#4F709C",
@@ -54,7 +55,6 @@ export default function Test() {
     const removeQindex = state[typePreviousChecked].indexOf(currentQ);
     removeQindex > -1 && dispatch({ type: 'removeChecked' + typePreviousChecked });
   };
-
   const nextQ = () => {
     dispatch({ type: "next" });
   };
@@ -74,48 +74,55 @@ export default function Test() {
   };
 
   return (
-    <div className="Test">
-      <div className="qText">{questions[currentQ].qText}</div>
-      <div className="option">
-        <MyButton
-          size="large"
-          onClick={() => {
-            handleOption(optionType0, optionType1);
-            questions.length !== currentQ + 1 && nextQ();
-          }}
-        >
-          {questions[currentQ].options[0].option}
-        </MyButton>
-        <MyButton
-          size="large"
-          onClick={() => {
-            handleOption(optionType1, optionType0);
-            questions.length !== currentQ + 1 && nextQ();
-          }}
-        >
-          {questions[currentQ].options[1].option}
-        </MyButton>
-      </div>
-      <div className="bottom">
-        {currentQ !== 0 && (
-          <MyButton size="small" onClick={backQ}>
-            Back
+    <div className="backhome">
+      <ButtonGroup variant="string" aria-label="text button group" size="large">
+        <Link to={`/`}>
+          <Button>Home</Button>
+        </Link>
+      </ButtonGroup>
+      <div className="Test">
+        <div className="qText">{questions[currentQ].qText}</div>
+        <div className="option">
+          <MyButton
+            size="large"
+            onClick={() => {
+              handleOption(optionType0);
+              questions.length !== currentQ + 1 && nextQ();
+            }}
+          >
+            {questions[currentQ].options[0].option}
           </MyButton>
-        )}
-        {questions.length === currentQ + 1 ? (
-          <div>
-            <h3>You have done the test!</h3>
-            <Link to={`/TestResult`} onClick={resultCal}>
-              <MyButton size="large" endIcon={<ArrowForwardIcon />}>
-                Submit and Check Result
-              </MyButton>
-            </Link>
-          </div>
-        ) : (
-          <MyButton size="small" onClick={nextQ}>
-            Next
+          <MyButton
+            size="large"
+            onClick={() => {
+              handleOption(optionType1);
+              questions.length !== currentQ + 1 && nextQ();
+            }}
+          >
+            {questions[currentQ].options[1].option}
           </MyButton>
-        )}
+        </div>
+        <div className="bottom">
+          {currentQ !== 0 && (
+            <MyButton size="small" onClick={backQ}>
+              Back
+            </MyButton>
+          )}
+          {questions.length === currentQ + 1 ? (
+            <div>
+              <h3>You have done the test!</h3>
+              <Link to={`/TestResult`} onClick={resultCal}>
+                <MyButton size="large" endIcon={<ArrowForwardIcon />}>
+                  Submit and Check Result
+                </MyButton>
+              </Link>
+            </div>
+          ) : (
+            <MyButton size="small" onClick={nextQ}>
+              Next
+            </MyButton>
+          )}
+        </div>
       </div>
     </div>
   );
