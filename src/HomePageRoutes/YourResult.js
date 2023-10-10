@@ -6,7 +6,6 @@ import TypeResultContent from "./TypeResultContent";
 import { CheckType } from "./Result/CheckType";
 import data from "./data.json";
 import "./YourResult.css";
-// import { type } from "@testing-library/user-event/dist/type";
 
 export default function YourResult() {
   const testedtypeobj = data.typeList.find(({ type }) => type === CheckType());

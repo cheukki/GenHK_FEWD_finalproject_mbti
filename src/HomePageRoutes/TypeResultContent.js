@@ -1,6 +1,6 @@
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import React, { useState } from "react";
-import SpotifyMusicApi from "./RecommendedList_api/spotify_music_api";
+// import SpotifyMusicApi from "./RecommendedList_api/spotify_music_api";
 
 export default function TypeResultContent({ showingtype }) {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
@@ -61,7 +61,19 @@ export default function TypeResultContent({ showingtype }) {
         <Box sx={{ p: 0 }}>
           <Typography variant="h5"></Typography>
           {/* <Typography variant="p">{showingtype.recommendedList}</Typography> */}
-          <Typography variant="h5">{SpotifyMusicApi()}</Typography>
+          <Typography variant="h5">
+            {/* <SpotifyMusicApi /> */}
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src={`https://open.spotify.com/embed/playlist/${showingtype.playlistId}?utm_source=generator`}
+              width="30%"
+              height="352"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </Typography>
         </Box>
       )}
     </React.Fragment>
